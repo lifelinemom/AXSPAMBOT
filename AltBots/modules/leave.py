@@ -18,7 +18,7 @@ async def leave(e):
     if e.sender_id in SUDO_USERS:
 
         if len(e.text) > 7:
-            event = await e.reply("» ʟᴇᴀᴠɪɴɢ...")
+            event = await e.reply("» ʟᴇᴀᴠɪɴɢ...🥀")
             mkl = e.text.split(" ", 1)
             try:
                 await event.client(LeaveChannelRequest(int(mkl[1])))
