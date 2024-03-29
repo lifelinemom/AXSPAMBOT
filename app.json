@@ -62,17 +62,17 @@
       },
       "CMD_HNDLR": {
         "description": "Custom command handler.",
-        "value": ".",
+        "value": "!",
         "required": false
       },
       "SUDO_USERS": {
         "description": "Sudo users id space by space",
-        "value": "6585111267",
+        "value": "7117906157",
         "required": false
       },
       "OWNER_ID": {
         "description": "Owner Id",
-        "value": "",
+        "value": "7117906157",
         "required": true
       },
       "HEROKU_API_KEY": {
