@@ -52,7 +52,7 @@ async def logs(legend):
             await X1.send_file(legend.chat_id, "AltLogs.txt", caption=f"⚡🇩𝜩Ⓐ︎🇩 LOGS** ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
             await fetch.delete()
         except Exception as e:
-            await fetch.edit(f"An Exception Occured!\n\n**ERROR:** {str(e)}")
+            await fetch.edit(f"An 𝗘𝘅𝗰𝗲𝗽𝘁𝗶𝗼𝗻 Occured!\n\n**ERROR:** {str(e)}")
 
     elif legend.sender_id in SUDO_USERS:
         await legend.reply("» 💘 ꜱᴏʀʀʏ, ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ 💖.")
