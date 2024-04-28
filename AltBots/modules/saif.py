@@ -1,18 +1,9 @@
-import asyncio
-
-from random import choice
-
-import asyncio
-
 from random import choice
 
 from telethon import events
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
 from AltBots.data import DEAD, ALTRON
-
-
-
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sabuse(?: |$)(.*)" % hl))
@@ -38,7 +29,7 @@ async def abuse(e):
             entity = await e.client.get_entity(a.sender_id)
             uid = entity.id
 
-               try:
+        try:
             if uid in ALTRON:
                 await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
             elif uid == OWNER_ID:
