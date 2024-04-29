@@ -242,3 +242,23 @@ async def help_extra(event):
             )
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+
+
+@X1.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X2.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X3.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X4.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X5.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X6.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X7.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X8.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X9.on(events.CallbackQuery(pattern=r"deadxspam"))
+@X10.on(events.CallbackQuery(pattern=r"deadxspam"))
+async def help_deadxspam(event):
+    if event.query.user_id in SUDO_USERS:    
+        await event.edit(deadxspam_msg,
+            buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
+       ) 
+    else:
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+
