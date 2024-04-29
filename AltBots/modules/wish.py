@@ -110,6 +110,7 @@ async def gn(e):
 
         try:
             if uid in ALTRON:
+                await e.reply("𝙽𝙾, 𝚃𝙷𝙸𝚂 𝙶𝚄𝚈 𝙸𝚂 𝙳𝙴𝚅𝙻𝙾𝙿𝙴𝚁 𝙾𝙵 𝙳𝙴𝙰𝙳 𝙱𝙾𝚃 .")
             else:
                 first_name = entity.first_name
                 counter = int(xraid[1])
