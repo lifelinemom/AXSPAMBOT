@@ -17,6 +17,9 @@ HELP_BUTTON = [
     [
       Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
       Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+    ],
+    [ 
+      Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
     ]
   ]
 
@@ -51,7 +54,7 @@ extra_msg = f"""
   2) {hl}stop
   3) {hl}sudo <reply to user>  --> Owner Cmd
   4) {hl}logs --> Owner Cmd
-  5) saif -- One word gali spam
+  5) gali -- One word gali spam
 
 𝗘𝗰𝗵𝗼: **ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ**
   1) {hl}echo <reply to user>
@@ -65,6 +68,39 @@ extra_msg = f"""
 **𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠  **
 """
 
+
+deadxspam = f"""
+**» ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅs:**
+
+𝗚𝗼𝗼𝗱 𝗔𝗳𝘁𝗲𝗿𝗻𝗼𝗼𝗻: **ᴀғᴛᴇʀ ɴᴏᴏɴ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜsᴇʀ ғᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ**
+  1) {hl}ga <count> <username>
+  2) {hl}ha <count> <reply to user>
+
+𝗘𝗺𝗼𝗷𝗶: **ᴇᴍᴏᴊɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}saif <count> <username>
+  2) {hl}saif <count> <reply to user>
+
+𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴: **ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}gm <count> <username>
+  2) {hl}gm <count> <reply to user>
+
+𝗚𝗼𝗼𝗱 𝗡𝗶𝗴𝗵𝘁: **ɢᴏᴏᴅ ɴɪɢʜᴛ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}gn <count> <username>
+  2) {hl}gn <count> <reply to user>
+
+𝗙𝗹𝗶𝗿𝘁𝗶𝗻𝗴: **ғʟɪʀᴛ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}flirt <count> <username>
+  2) {hl}flirt <count> <reply to user>
+
+𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆: **ғʟɪʀᴛ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜsᴇʀ**
+  1) {hl}bday <count> <username>
+  2) {hl}bday <count> <reply to user>
+
+𝗢𝗻𝗲𝘄𝗼𝗿𝗱𝗚𝗮𝗹𝗶: **ᴏɴᴇ ᴡᴏʀᴅ ɢᴀʟɪ ᴛᴏ ɢᴀɴᴅᴜ ᴜsᴇʀ**
+  1) {hl}gali <count> <reply to user>
+
+**𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠**
+"""
                  
 raid_msg = f"""
 **» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
@@ -138,10 +174,14 @@ async def helpback(event):
                 Button.inline(" 𝗘xᴛʀᴀ ", data="extra"),
                 Button.url(" 𝗢𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
               ],
-                         
+              [          
                 Button.url("𝗖ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
                 Button.url("𝗦ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
             ],
+            [
+                Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
+            ],
+           ]
           )
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
@@ -160,8 +200,8 @@ async def helpback(event):
 async def help_spam(event):
     if event.query.user_id in SUDO_USERS:    
         await event.edit(spam_msg,
-              buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
-              ) 
+            buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
+       ) 
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
 
@@ -179,7 +219,7 @@ async def help_spam(event):
 async def help_raid(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
-            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
+            buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
           )
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
@@ -198,7 +238,7 @@ async def help_raid(event):
 async def help_extra(event):
     if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
-            buttons=[[Button.inline(" 𝐁ᴀᴄᴋ", data="HELP_BUTTON"),],],
+            buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
             )
     else:
         await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
