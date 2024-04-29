@@ -1,4 +1,4 @@
-fromfrom random import choice
+from random import choice
 
 from telethon import events
 
