@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠 𝗛𝗘𝗟𝗣 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀: @SAIF_DICTATOR**"
+HELP_STRING = f"𝗗𝗘𝗔𝗗 𝗫 𝗦𝗣𝗔𝗠 𝗛𝗘𝗟𝗣 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀: @FUCK_OF_FEELINGS**"
 
 HELP_BUTTON = [
     [
@@ -12,11 +12,11 @@ HELP_BUTTON = [
     ],
     [
       Button.inline(" 𝐄xᴛʀᴀ ", data="extra"),
-      Button.url("𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+      Button.url("𝐎𝚆𝙽𝙴𝚁 ", "https://t.me/about_meeBachaa")
     ],
     [
-      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
-      Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+      Button.url(" 𝐂ʜᴀɴɴᴇʟ ", "https://t.me/about_meeBachaa"),
+      Button.url("𝐒ᴜᴘᴘᴏʀᴛ ", "https://t.me/innocent_world_chat")
     ],
     [ 
       Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
@@ -172,11 +172,11 @@ async def helpback(event):
               ],
               [
                 Button.inline(" 𝗘xᴛʀᴀ ", data="extra"),
-                Button.url(" 𝗢𝚆𝙽𝙴𝚁 ", "https://t.me/Saif_Dictator")
+                Button.url(" 𝗢𝚆𝙽𝙴𝚁 ", "https://t.me/FUCK_0F_FEELINGS")
               ],
               [          
-                Button.url("𝗖ʜᴀɴɴᴇʟ ", "https://t.me/DEAD_GRPCHAT"),
-                Button.url("𝗦ᴜᴘᴘᴏʀᴛ ", "https://t.me/SAIFALLBOT")
+                Button.url("𝗖ʜᴀɴɴᴇʟ ", "https://t.me/about_meeBachaa"),
+                Button.url("𝗦ᴜᴘᴘᴏʀᴛ ", "https://t.me/innocent_world_chat")
             ],
             [
                 Button.inline(" 𝐃ᴇᴀᴅ 𝐗 𝐒ᴘᴀᴍ", data="deadxspam")
@@ -184,7 +184,7 @@ async def helpback(event):
            ]
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @FUCK_0F_FEELINGS", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -203,7 +203,7 @@ async def help_spam(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
        ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @FUCK_0F_FEELINGS", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -222,7 +222,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
           )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @FUCK_0F_FEELINGS", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -241,7 +241,7 @@ async def help_extra(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
             )
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @Saif_Dictator", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @FUCK_0F_FEELINGS", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"deadxspam"))
@@ -260,5 +260,5 @@ async def help_deadxspam(event):
             buttons=[[Button.inline("< 𝐁ᴀᴄᴋ", data="help_back"),],],
        ) 
     else:
-        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @SAIF_DICTATOR", cache_time=0, alert=True)
+        await event.answer("ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ 🇩𝜩Ⓐ︎🇩 sᴘᴀᴍ  ʙᴏᴛs !! @FUCK_0F_FEELINGS", cache_time=0, alert=True)
 
